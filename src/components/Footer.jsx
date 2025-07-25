@@ -28,6 +28,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
+            <div className="footest">
+                <p>© 2025 Luna. All rights reserved</p>
+            </div>
         </>
     )
 }

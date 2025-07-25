@@ -126,6 +126,10 @@ svg:hover {
   width: 100%;
 }
 
+.left-footer {
+  font-family: 'Raleway', sans-serif;
+}
+
 .right-footer {
   display: flex;
   flex-direction: row;
@@ -142,4 +146,11 @@ svg:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.footest {
+  color: white;
+  background-color: rgb(100, 72, 72);
+  text-align: center;
+  padding: 2px;
 }
