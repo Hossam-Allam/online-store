@@ -38,3 +38,35 @@ svg:hover {
   cursor: pointer;
   fill: rgb(75, 4, 4);
 }
+
+/*Home content*/
+
+.home-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+.home-content .penguins {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* ensures it fills its cell without distortion */
+}
+
+.mission {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(100, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+  }
+}
