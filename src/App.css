@@ -1,3 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* Changed from 100vh */
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+}
+
 /*Header*/
 .header {
   display: flex;
@@ -105,10 +117,29 @@ svg:hover {
 /*Footer*/
 
 .footer {
-  color: #616689;
-  background-color: rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(96, 93, 93);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
 }
 
-.left-footer {
-  padding: 10px;
+.right-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.useful-links,
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

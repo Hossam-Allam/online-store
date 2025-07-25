@@ -2,7 +2,7 @@ import penguin from "../assets/penguin.jpeg"
 function Home() {
 
     return (
-        <>
+        <div className="main">
             <div className="home-content">
                 <div className="mission">
                     <h2>Our Mission</h2>
@@ -14,7 +14,7 @@ function Home() {
                 <img src={penguin} alt="aura penguin" className="penguins" />
             </div>
             <div><button className="shop-btn">Shop Now</button></div>
-        </>
+        </div>
     )
 }
 
