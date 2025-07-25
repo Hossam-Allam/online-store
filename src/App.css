@@ -1,0 +1,17 @@
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #616689;
+  padding: 10px;
+}
+
+.logo {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.subheader {
+  color: white;
+  background-color: black;
+}
