@@ -14,4 +14,27 @@
 .subheader {
   color: white;
   background-color: black;
+  height: 50px;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+svg:hover {
+  cursor: pointer;
+  fill: rgb(75, 4, 4);
 }
