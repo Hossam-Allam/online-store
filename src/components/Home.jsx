@@ -13,6 +13,7 @@ function Home() {
                 </div>
                 <img src={penguin} alt="aura penguin" className="penguins" />
             </div>
+            <div><button className="shop-btn">Shop Now</button></div>
         </>
     )
 }
