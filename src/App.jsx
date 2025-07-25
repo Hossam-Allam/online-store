@@ -1,5 +1,6 @@
 import './App.css'
 import { Link } from 'react-router-dom'
+import Home from './components/Home'
 import Header from './components/Header'
 
 function App() {
@@ -7,8 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <h1>Hello im app</h1>
-      <Link to="cart">cart page</Link>
+      <Home />
     </>
   )
 }
