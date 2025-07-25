@@ -59,11 +59,23 @@ svg:hover {
 
 }
 
+.penguin-wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
 .home-content .penguins {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   /* ensures it fills its cell without distortion */
+  transition: transform 0.3s ease;
+}
+
+.penguins:hover {
+  transform: scale(1.05);
 }
 
 .mission {

@@ -11,7 +11,9 @@ function Home() {
                     <p>Our pieces blend effortless edge with refined simplicity—so you stand out.</p>
                     <p>Wear your confidence. Shine your story.</p>
                 </div>
-                <img src={penguin} alt="aura penguin" className="penguins" />
+                <div className="penguin-wrapper">
+                    <img src={penguin} alt="aura penguin" className="penguins" />
+                </div>
             </div>
             <div><button className="shop-btn">Shop Now</button></div>
         </div>
