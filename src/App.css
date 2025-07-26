@@ -176,3 +176,32 @@ svg:hover {
   text-decoration: none;
   color: white;
 }
+
+/*Shop page*/
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.men-btn,
+.wmn-btn {
+  padding: 5px;
+
+  border: 2px solid #616689;
+}
+
+.men-btn:hover,
+.wmn-btn:hover {
+  color: white;
+  background-color: #616689;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  background-color: #616689;
+}
