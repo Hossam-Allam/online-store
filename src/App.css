@@ -166,3 +166,10 @@ svg:hover {
   text-align: center;
   padding: 2px;
 }
+
+/*Links*/
+
+.hdr-shop-lnk {
+  text-decoration: none;
+  color: white;
+}

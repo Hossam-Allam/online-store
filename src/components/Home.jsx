@@ -1,4 +1,6 @@
 import penguin from "../assets/penguin.jpeg"
+import { Link } from "react-router-dom"
+
 function Home() {
 
     return (
@@ -15,7 +17,9 @@ function Home() {
                     <img src={penguin} alt="aura penguin" className="penguins" />
                 </div>
             </div>
-            <div><button className="shop-btn">Shop Now</button></div>
+            <div>
+                <Link to="shop"><button className="shop-btn">Shop Now</button></Link>
+            </div>
         </div>
     )
 }
