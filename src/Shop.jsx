@@ -1,6 +1,16 @@
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 function Shop() {
     return (
-        <h1>Im shop</h1>
+        <>
+            <Header />
+            <div className="main">
+
+            </div>
+            <Footer />
+        </>
+
     )
 }
 
