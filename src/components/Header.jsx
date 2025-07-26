@@ -12,7 +12,7 @@ function Header() {
             <div className="subheader">
                 <ul>
                     <li>Home</li>
-                    <li>Collection</li>
+                    <Link to="shop"><li>Collection</li></Link>
                     <li>Links</li>
                 </ul>
             </div>
