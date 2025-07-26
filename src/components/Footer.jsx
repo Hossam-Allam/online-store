@@ -29,7 +29,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footest">
-                <p>© 2025 Luna. All rights reserved</p>
+                <p>© 2025 LUNE. All rights reserved</p>
             </div>
         </>
     )
