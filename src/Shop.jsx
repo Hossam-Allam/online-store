@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { useState, useEffect } from "react"
+import Card from "./components/Card"
 
 function Shop() {
     const [category, setCategory] = useState("men")
@@ -35,6 +36,10 @@ function Shop() {
                         <div className="ring two"></div>
                         <div className="ring three"></div>
                     </button>
+                </div>
+
+                <div className="items">
+                    <Card />
                 </div>
             </div>
             <Footer />
