@@ -269,3 +269,57 @@ svg:hover {
   z-index: 1;
   margin: 0;
 }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+      minmax(270px, 1fr));
+}
+
+/*CARD SECTION*/
+
+.card {
+  width: fit-content;
+  padding: 0px;
+  margin: 13px;
+  border: 7px solid rgb(165, 165, 165);
+  background-color: white;
+}
+
+.card:hover {
+  margin: 10px;
+  border: 10px solid #616689;
+}
+
+.card-img {
+  background-color: #333;
+  width: 250px;
+  height: 300px;
+}
+
+.pricecart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  align-self: center;
+  font-weight: bolder;
+  color: #616689;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.plus:hover {
+  transform: rotate(-360deg);
+  cursor: pointer;
+}
+
+.margin {
+  margin: 3px;
+}

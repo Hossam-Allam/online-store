@@ -40,6 +40,7 @@ function Shop() {
 
                 <div className="items">
                     <Card />
+                    <Card />
                 </div>
             </div>
             <Footer />
