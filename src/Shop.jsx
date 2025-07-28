@@ -39,10 +39,10 @@ function Shop() {
                 </div>
 
                 <div className="items">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card name="Hoodie" price={34} img="none" />
+                    <Card name="Hoodie" price={34} img="none" />
+                    <Card name="Hoodie" price={34} img="none" />
+                    <Card name="Hoodie" price={34} img="none" />
                 </div>
             </div>
             <Footer />

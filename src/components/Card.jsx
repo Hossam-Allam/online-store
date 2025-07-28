@@ -1,11 +1,11 @@
-function Card() {
+function Card({ img, name, price }) {
     return (
         <div className="card">
             <div className="card-img">
             </div>
-            <h3 className="margin">Item Name</h3>
+            <h3 className="margin">{name}</h3>
             <div className="pricecart margin">
-                <div>34$</div>
+                <div>{price}$</div>
                 <div className="plus margin">+</div>
             </div>
         </div>
