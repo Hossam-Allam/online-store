@@ -41,6 +41,8 @@ function Shop() {
                 <div className="items">
                     <Card />
                     <Card />
+                    <Card />
+                    <Card />
                 </div>
             </div>
             <Footer />
