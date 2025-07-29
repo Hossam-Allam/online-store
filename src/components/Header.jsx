@@ -13,7 +13,7 @@ function Header() {
                 <ul>
                     <li>Home</li>
                     <Link to="shop" className="hdr-shop-lnk"><li>Collection</li></Link>
-                    <li>Links</li>
+                    <li><a href="#footer">Links</a></li>
                 </ul>
             </div>
         </>

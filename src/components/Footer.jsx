@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <>
-            <div className="footer">
+            <div className="footer" id="footer">
                 <div className="left-footer">
                     <h1>Lune</h1>
                     <p>I hope you like this fun concept project.</p>
