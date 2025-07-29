@@ -334,10 +334,26 @@ svg:hover {
 }
 
 .plus:hover {
-  transform: rotate(-360deg);
+  transform: rotate(90deg);
   cursor: pointer;
 }
 
 .margin {
   margin: 3px;
+}
+
+
+
+
+.two {
+  display: none;
+}
+
+/* on hover, fade the first out and the second in */
+.card:hover .one {
+  display: none;
+}
+
+.card:hover .two {
+  display: block;
 }
