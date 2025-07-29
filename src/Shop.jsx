@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import { useState, useEffect } from "react"
 import Card from "./components/Card"
 
+
 function Shop() {
     const [category, setCategory] = useState("men")
     useEffect(() => {
