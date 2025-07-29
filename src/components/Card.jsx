@@ -1,10 +1,11 @@
 import penguin from "../assets/penguin.jpeg"
 
 function Card({ img, name, price }) {
+    console.log(img)
     return (
         <div className="card">
             <div className="card-img">
-                <img src={penguin} alt="penguin" className="item-img" />
+                <img src={img} alt="penguin" className="item-img" referrerPolicy="no-referrer" />
             </div>
             <h3 className="margin">{name}</h3>
             <div className="pricecart margin">

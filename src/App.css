@@ -287,6 +287,8 @@ svg:hover {
   margin: 13px;
   border: 7px solid rgb(165, 165, 165);
   background-color: white;
+  box-sizing: content-box;
+  max-width: 250px;
 }
 
 .card:hover {
