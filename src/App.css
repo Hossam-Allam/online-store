@@ -392,11 +392,15 @@ svg:hover {
   min-height: 100vh;
 }
 
+.no-items,
+.yes-items {
+  flex: 1;
+}
+
 .no-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
   text-align: center;
 }
 

@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import { useCart } from "./CartContext"
 import { Link } from "react-router-dom";
 function Cart() {
-    const { cart, removeFromCart } = useCart();
+    const { cart, handleRemoveFromCart } = useCart();
 
     if (cart.length == 0) {
         return (
@@ -18,10 +18,15 @@ function Cart() {
 
         )
     }
+
     return (
-        <>
+        <div className="cart-page">
             <Header />
-        </>
+            <div className="yes-items">
+
+            </div>
+            <Footer />
+        </div>
     )
 }
 
