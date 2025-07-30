@@ -13,7 +13,7 @@ export function CartProvider({ children }) {
         });
     };
 
-    const hadnleRemoveFromCart = item => {
+    const handleRemoveFromCart = item => {
         setCart(prev => prev.filter(i => i.id !== item.id));
     };
 

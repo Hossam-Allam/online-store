@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Cart from './Cart.jsx';
 import Shop from './Shop.jsx';
-
+import { CartProvider } from './CartContext.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +23,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 )

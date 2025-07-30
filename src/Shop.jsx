@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
-
+import { useCart } from "./CartContext";
 function Shop() {
     // "clothes" will map to "mens-shirts", "shoes" to "womens-dresses" this is to keep CSS compatibility
     const [category, setCategory] = useState("clothes");
     const [items, setItems] = useState([]);
-    const [cart, setCart] = useState([]);
+    const { cart, handleAddToCart, handleRemoveFromCart } = useCart();
 
     useEffect(() => {
         // map our category keys to DummyJSON category names
@@ -28,16 +28,6 @@ function Shop() {
             .catch(err => console.error("Fetch failed:", err));
     }, [category]);
 
-    const handleAddToCart = item => {
-        setCart(prev => {
-            if (prev.find(i => i.id === item.id)) return prev;
-            return [...prev, item];
-        });
-    };
-
-    const handleRemoveFromCart = item => {
-        setCart(prevCart => prevCart.filter(i => i.id !== item.id));
-    };
 
     return (
         <>

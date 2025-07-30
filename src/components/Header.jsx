@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom"
-
-function Header({ cart = [], cIcon }) {
+import { useCart } from "../CartContext";
+function Header({ cIcon }) {
+    const { cart } = useCart();
     const fill = cart.length === 0 ? "none" : "#9d5050ff";
-
     const navigate = useNavigate();
     return (
         <>
