@@ -383,3 +383,28 @@ svg:hover {
 .card:hover .two {
   display: block;
 }
+
+/* Cart Page */
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.no-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+
+i {
+  font-weight: bold;
+  color: #616689;
+}
+
+i:hover {
+  cursor: pointer;
+}
