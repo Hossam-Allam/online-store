@@ -4,8 +4,9 @@ import Footer from "./components/Footer";
 import Card from "./components/Card";
 
 function Shop() {
-    const [category, setCategory] = useState("clothes");  // default
+    const [category, setCategory] = useState("clothes");
     const [items, setItems] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         // map “clothes” → 1, “shoes” → 4
@@ -20,6 +21,19 @@ function Shop() {
             .then(data => setItems(data))
             .catch(err => console.error("Fetch failed:", err));
     }, [category]);
+
+    const handleAddToCart = item => {
+        setCart(prev => {
+            if (prev.find(i => i.id === item.id)) return prev;
+            return [...prev, item];
+        });
+    };
+
+    const handleRemoveFromCart = item => {
+        setCart(prevCart =>
+            prevCart.filter(i => i.id !== item.id)
+        );
+    };
 
     return (
         <>
@@ -52,9 +66,9 @@ function Shop() {
                         item.images && item.images[1] && (
                             <Card
                                 key={item.id}
-                                name={item.title}
-                                price={item.price}
-                                img={item.images}
+                                product={item}
+                                AddToCart={handleAddToCart}
+                                RemoveFromCart={handleRemoveFromCart}
                             />
                         )
                     )}
