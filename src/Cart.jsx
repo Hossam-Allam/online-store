@@ -1,7 +1,8 @@
+import Header from "./components/Header"
 function Cart() {
     return (
         <>
-            <h1>Hello im cart</h1>
+            <Header />
         </>
     )
 }
