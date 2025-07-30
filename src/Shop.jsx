@@ -7,7 +7,7 @@ function Shop() {
     const [category, setCategory] = useState("clothes");
     const [items, setItems] = useState([]);
     const [cart, setCart] = useState([]);
-
+    console.log(cart)
     useEffect(() => {
         // map “clothes” → 1, “shoes” → 4
         const categoryMap = { clothes: 1, shoes: 4 };
