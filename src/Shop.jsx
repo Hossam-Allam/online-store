@@ -37,7 +37,7 @@ function Shop() {
 
     return (
         <>
-            <Header cart={cart} />
+            <Header cart={cart} cIcon={true} />
             <div className="main">
                 <div className="category-buttons">
                     <button
