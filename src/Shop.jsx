@@ -10,7 +10,7 @@ function Shop() {
     console.log(cart)
     useEffect(() => {
         // map “clothes” → 1, “shoes” → 4
-        const categoryMap = { clothes: 1, shoes: 4 };
+        const categoryMap = { clothes: 57, shoes: 59 };
         const catId = categoryMap[category];
 
         fetch(`https://api.escuelajs.co/api/v1/categories/${catId}/products`)
