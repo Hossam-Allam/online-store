@@ -3,7 +3,8 @@ import { useState } from "react";
 function Card({ product, AddToCart, RemoveFromCart }) {
     const { images, title, price, id } = product;
     const [icon, setIcon] = useState("+")
-
+    let secondImage;
+    images[2] ? secondImage = images[2] : secondImage = "https://kirpi.co/wp-content/uploads/2021/09/404-not-found-v2.jpg"
     const handleIconClick = () => {
         if (icon == "+") {
             setIcon("-")
@@ -19,7 +20,7 @@ function Card({ product, AddToCart, RemoveFromCart }) {
                 <img src={images[1]} alt="penguin" className="item-img" referrerPolicy="no-referrer" />
             </div>
             <div className="card-img two">
-                <img src={images[2]} alt={"API broke, bruh"} className="item-img" referrerPolicy="no-referrer" />
+                <img src={secondImage} alt={"API broke, bruh"} className="item-img" referrerPolicy="no-referrer" />
             </div>
             <h3 className="card-title margin">{title}</h3>
             <div className="pricecart margin">
