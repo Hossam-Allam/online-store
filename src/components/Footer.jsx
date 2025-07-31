@@ -15,15 +15,15 @@ function Footer() {
                         <ul className="footer-links">
                             <li>Return Policy</li>
                             <li>Shipping</li>
-                            <li>Repository</li>
+                            <li><a href="https://github.com/Hossam-Allam/online-store" target="_blank">Repository</a></li>
                         </ul>
                     </div>
                     <div className="contact">
                         <h3 className="h-links">Contact Me</h3>
                         <ul className="footer-links">
                             <li>hossamallam32@gmail.com</li>
-                            <li>LinkedIn</li>
-                            <li>Github</li>
+                            <li><a href="https://www.linkedin.com/in/hossam-hesham-allam-refaie-6674a9282/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/Hossam-Allam" target="_blank">Github</a></li>
                         </ul>
                     </div>
                 </div>
