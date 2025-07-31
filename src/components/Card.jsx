@@ -1,19 +1,15 @@
-import { useState } from "react";
-
+import { useCart } from "../CartContext";
 function Card({ product, AddToCart, RemoveFromCart }) {
     const { images, title, price, id } = product;
-    const [icon, setIcon] = useState("+")
+    const { cart } = useCart();
+    const inCart = cart.some(i => i.id === id);
     let secondImage;
     images[2] ? secondImage = images[2] : secondImage = "https://kirpi.co/wp-content/uploads/2021/09/404-not-found-v2.jpg"
     const handleIconClick = () => {
-        if (icon == "+") {
-            setIcon("-")
-            AddToCart(product)
-        } else {
-            setIcon("+")
-            RemoveFromCart(product)
-        }
+        if (inCart) RemoveFromCart(product);
+        else AddToCart(product);
     }
+    const icon = inCart ? "–" : "+";
     return (
         <div className="card">
             <div className="card-img one">
